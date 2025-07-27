@@ -52,9 +52,9 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="h-8 w-8 rounded-lg bg-white/20 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
+                <span className="text-white font-bold text-lg">O</span>
               </div>
-              <span className="text-xl font-bold text-white">EcomStore</span>
+              <span className="text-xl font-bold text-white">Onyx</span>
             </Link>
             <p className="text-white/80 mb-6 max-w-md">
               Your trusted partner for online shopping. We offer the best products at competitive prices with fast, reliable delivery worldwide.
@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-white/80">
                 <Mail className="h-4 w-4" />
-                <span>support@ecomstore.com</span>
+                <span>support@onyx.com</span>
               </div>
               <div className="flex items-center space-x-3 text-white/80">
                 <Phone className="h-4 w-4" />
@@ -139,7 +139,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm">
-            © 2024 EcomStore. All rights reserved.
+            © 2024 Onyx. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-white/70 hover:text-white text-sm transition-colors">

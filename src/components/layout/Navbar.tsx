@@ -32,9 +32,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">E</span>
+              <span className="text-primary-foreground font-bold text-lg">O</span>
             </div>
-            <span className="text-xl font-bold text-foreground">EcomStore</span>
+            <span className="text-xl font-bold text-foreground">Onyx</span>
           </Link>
 
           {/* Desktop Navigation */}
