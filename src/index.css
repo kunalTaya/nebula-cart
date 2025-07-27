@@ -125,7 +125,7 @@
 }
 
 @layer components {
-  /* E-Commerce Component Utilities */
+  /* Onyx Component Utilities */
   .gradient-primary {
     background: var(--gradient-primary);
   }
@@ -160,6 +160,28 @@
   
   .transition-spring {
     transition: var(--transition-spring);
+  }
+  
+  /* Grid Background Pattern */
+  .grid-background {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .grid-background-dark {
+    background-image: 
+      linear-gradient(hsl(200 100% 50% / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(200 100% 50% / 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .grid-background-subtle {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
   }
   
   /* Product Card Styles */

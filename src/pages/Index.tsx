@@ -7,13 +7,15 @@ import Testimonials from '@/components/home/Testimonials';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background grid-background-subtle">
       <Navbar />
       <main>
         <Hero />
-        <FeaturedProducts />
-        <Services />
-        <Testimonials />
+        <div className="grid-background-subtle">
+          <FeaturedProducts />
+          <Services />
+          <Testimonials />
+        </div>
       </main>
       <Footer />
     </div>

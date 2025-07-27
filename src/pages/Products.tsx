@@ -214,7 +214,7 @@ const Products = () => {
   }, [products, searchQuery, selectedCategory, sortBy]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background grid-background-subtle">
       <Navbar />
       
       <main className="container mx-auto px-4 py-8">

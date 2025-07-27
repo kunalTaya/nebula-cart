@@ -63,7 +63,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background grid-background-subtle">
       <Navbar />
       
       <main>
@@ -71,7 +71,7 @@ const About = () => {
         <section className="py-16 bg-gradient-hero text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <Badge className="mb-6 bg-white/10 text-white border-white/20">
-              About EcomStore
+              About Onyx
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Revolutionizing Online Shopping
