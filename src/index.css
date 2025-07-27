@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* E-Commerce Design System - Professional Dark Blue Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Core Brand Colors */
+    --background: 240 15% 98%;
+    --foreground: 215 25% 15%;
+    
+    /* Primary Brand - Deep Ocean Blue */
+    --primary: 215 85% 25%;
+    --primary-light: 215 75% 35%;
+    --primary-dark: 215 95% 15%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Electric Blue Accent */
+    --accent: 200 100% 50%;
+    --accent-light: 200 90% 60%;
+    --accent-foreground: 215 25% 15%;
+    
+    /* Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 215 25% 15%;
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 15% 45%;
+    
+    /* Interactive States */
+    --secondary: 215 25% 92%;
+    --secondary-foreground: 215 25% 15%;
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 200 100% 50%;
+    
+    /* Status Colors */
+    --success: 145 65% 45%;
+    --warning: 45 90% 55%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Design System Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 25%), hsl(200 100% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 95% 15%) 0%, hsl(215 85% 25%) 50%, hsl(200 100% 35%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 20% 96%));
+    --gradient-glass: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    
+    /* Shadows & Effects */
+    --shadow-soft: 0 4px 20px -2px hsl(215 85% 25% / 0.1);
+    --shadow-medium: 0 8px 30px -4px hsl(215 85% 25% / 0.15);
+    --shadow-strong: 0 16px 50px -8px hsl(215 85% 25% / 0.2);
+    --shadow-glow: 0 0 30px hsl(200 100% 50% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    --radius: 0.75rem;
+    
+    /* Additional Design Elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 215 25% 15%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +80,37 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Mode - Deep Ocean Theme */
+    --background: 215 95% 8%;
+    --foreground: 0 0% 95%;
+    
+    --primary: 200 100% 60%;
+    --primary-light: 200 90% 70%;
+    --primary-dark: 200 100% 45%;
+    --primary-foreground: 215 95% 8%;
+    
+    --accent: 215 85% 35%;
+    --accent-light: 215 75% 45%;
+    --accent-foreground: 0 0% 95%;
+    
+    --card: 215 85% 12%;
+    --card-foreground: 0 0% 95%;
+    --muted: 215 75% 15%;
+    --muted-foreground: 215 20% 65%;
+    
+    --secondary: 215 75% 18%;
+    --secondary-foreground: 0 0% 95%;
+    --border: 215 65% 20%;
+    --input: 215 65% 20%;
+    --ring: 200 100% 60%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(215 95% 15%), hsl(200 100% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 100% 5%) 0%, hsl(215 95% 15%) 50%, hsl(200 100% 30%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 85% 12%), hsl(215 75% 18%));
+    
+    --shadow-soft: 0 4px 20px -2px hsl(215 100% 5% / 0.3);
+    --shadow-medium: 0 8px 30px -4px hsl(215 100% 5% / 0.4);
+    --shadow-strong: 0 16px 50px -8px hsl(215 100% 5% / 0.5);
   }
 }
 
@@ -100,6 +120,62 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* E-Commerce Component Utilities */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    @apply bg-card rounded-xl border border-border p-4 transition-all duration-300 hover:shadow-medium hover:-translate-y-1;
+  }
+  
+  /* Hero Button Styles */
+  .btn-hero {
+    @apply px-8 py-4 rounded-xl font-semibold text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-glow;
+    background: var(--gradient-primary);
+  }
+  
+  /* Glass Morphism Effect */
+  .glass {
+    @apply backdrop-blur-md border border-white/20;
+    background: var(--gradient-glass);
   }
 }
